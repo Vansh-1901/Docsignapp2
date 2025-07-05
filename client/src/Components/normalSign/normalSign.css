@@ -1,0 +1,55 @@
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Label styling */
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #555;
+}
+
+/* Input & select styling */
+input.form-control,
+select.form-control {
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input.form-control:focus,
+select.form-control:focus {
+  border-color: #d9d4e4;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+/* Signature preview box */
+.text-center.border.bg-light {
+  border-radius: 8px;
+  font-weight: 500;
+  color: #222;
+  background-color: #f8f9fa;
+}
+
+/* Responsive text preview */
+.text-center p {
+  margin: 0;
+  word-break: break-word;
+}

@@ -1,0 +1,98 @@
+Reset & Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #9870ee, #52259b);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Utility Classes */
+.btn-primary {
+  background: linear-gradient(to right, #6349a3, #2857c5);
+  border: none;
+  color: rgba(255, 255, 255, 0.628);
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #7440a4, #381669);
+}
+
+/* Centered container (used for Login, Signup, etc.) */
+.centered-box {
+  width: 100%;
+  max-width: 700px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.903);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form Inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #f4eeee32;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #010609;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Navbar (if shared globally) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: rgb(249, 247, 247);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #6a1bb3;
+}
+
+.navbar .logout-button {
+  background-color: #426dca;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .centered-box {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

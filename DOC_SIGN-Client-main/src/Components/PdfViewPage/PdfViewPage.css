@@ -1,0 +1,29 @@
+.pdf-sign-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  top: 5rem;
+  margin-top: 4.5rem;
+  width: 1300px;
+}
+
+/* Left: PDF Viewer */
+.pdf-section {
+  flex: 3;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  background-color: #fff;
+}
+
+/* Right: Sign Panel */
+.sign-section {
+  right: 0;
+  flex: 1.2;
+  max-width: 800px;
+  min-width: 600px;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.05);
+}

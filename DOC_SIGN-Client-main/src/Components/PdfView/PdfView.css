@@ -1,0 +1,62 @@
+Main wrapper
+.container-pdf-view {
+  width: 100%;
+  padding: 40px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 1rem;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 750px;
+  max-width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.pdf-container {
+  width: 100%;
+  max-width: 100vw; 
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+
+.pdf-container .rpv-core__viewer {
+  height: 90vh;
+  width: 100%;
+}
+
+.pdf-container canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+@media (max-width: 768px) {
+  .pdf-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}

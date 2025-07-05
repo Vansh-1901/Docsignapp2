@@ -1,0 +1,98 @@
+Reset & Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e3c3ff, #f2b9ff);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Utility Classes */
+.btn-primary {
+  background: linear-gradient(to right, #8a2be2, #c94ddf);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #6a1bb3, #a842ca);
+}
+
+/* Centered container (used for Login, Signup, etc.) */
+.centered-box {
+  width: 100%;
+  max-width: 700px;
+  margin: 80px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form Inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Navbar (if shared globally) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #6a1bb3;
+}
+
+.navbar .logout-button {
+  background-color: #a842ca;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .centered-box {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
